@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables and Forms</title>
+</head>
+<body>
+  <!-- forms are used to collect the data from user.
+  e.g: registartion, login, payment etc...  -->
+  <!-- to define a form we begin with form tag -->
+  <form action="#">
+    <label for="firstname">First Name:</label><br>
+    <input type="text" id="firstname" placeholder="Enter your first name:"><br>
+    <!-- inside of the form we will create inputs with input tag -->
+    <br>
+    <label for="lastname">Last Name: </label> <br>
+    <input type="text" id="lastname" placeholder="Enter your last name:"><br>
+    <br>
+    <!-- lets create a larger input for messages that have multiple characters -->
+    <label for="message">Type message here:</label> <br>
+    <!-- for textarea we need to use textarea tag instead of input -->
+    <textarea id="message" cols="20" rows="1" placeholder="Enter your message here:"></textarea><br>
+    <br>
+    <!-- we can use input type email to expect an email and do validations -->
+    <label for="email">Email: </label><br>
+    <!-- email type validates that the input has an @ in the value provided -->
+    <input type="email" id="email" placeholder="Enter your email:"><br>
+    <br>
+    <!-- we dont want to expose the password of the users that they type -->
+    <label for="password">Password: </label><br>
+    <!-- the password type will hide the characters under dots for security reasons -->
+    <input type="password" id="password" placeholder="Enter your password:"><br>
+    <br>
+    <!-- submit button will send the data to the server for processing -->
+    <input type="submit">
+    <!-- reset button will clean up everything in scope of the form(all inputs included in the form) -->
+    <input type="reset">
+  </form>
+
+<hr>
+<br><br>
+  <form action="#">
+    <p>Select gender:</p>
+    <!-- radio buttons will allow user to select one input out of many -->
+    <!-- remember the radio buttons that relate to a specific group should have name attribute and same attribute bvalue -->
+    <label for="genmale">Male</label>
+    <input type="radio" id="genmale" name="gender">
+
+    <label for="genfemale">Female</label>
+    <input type="radio" id="genfemale" name="gender">
+
+    <label for="genother">Other</label>
+    <input type="radio" id="genother" name="gender">
+
+    <br><br>
+
+    <!-- checkboxes will allow the user to select multiple options out of many -->
+    <p style="color: #4EC5C1">Select your favorite cars:</p>
+    <input type="checkbox" id="bmw" name="cars">
+    <label for="bmw">BMW</label> <br>
+
+    <input type="checkbox" id="mercedes" name="cars">
+    <label for="bmw">Mercedes</label><br>
+
+    <input type="checkbox" id="tesla" name="cars">
+    <label for="bmw">Tesla</label><br>
+
+    <input type="checkbox" id="lexus" name="cars">
+    <label for="bmw">Lexus</label><br>
+
+    <input type="checkbox" id="Mini" name="cars">
+    <label for="bmw">Mini</label><br>
+    
+    <input type="checkbox" id="all" name="cars">
+    <label for="bmw">All of the above</label><br>
+
+    <br><br><br><br><hr>
+
+    <!-- create a dropdown with select tag -->
+    <label for="country">Select your country:</label>
+    <select name="country" id="country">
+      <option value="usa">United States Of America</option>
+      <option value="canada">Canada</option>
+      <option value="mexico">Mexico</option>
+    </select>
+
+    <br><br><br><br><hr>
+
+    <label for="num">Enter a number: </label>
+    <input type="number" id="num">
+    <br><br>
+    <button>Custom Button</button>
+    <br><br>
+    <label for="color">Choose a color: </label>
+    <input type="color" id="color">
+    <br><br> 
+    <label for="month">Select month:</label>
+    <input type="month" id="month">
+    <br><br> 
+    <label for="date">Select a date:</label>
+    <input type="date" id="date">
+    <br><br> 
+    <label for="datetime">Select time:</label>
+    <input type="datetime-local" id="datetime">
+    <br><br>
+    <label for="file">Upload a file: </label>
+    <input type="file" id="file">
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </form>
+<hr>
+  
+</body>
+</html>

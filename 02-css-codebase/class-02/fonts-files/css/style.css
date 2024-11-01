@@ -1,0 +1,50 @@
+/* here we apply the imported font from google fonts and linked in html head section */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Apply different font styles */
+h3 {
+    /* change the font size using different units */
+    /* this will change the font size to 30px */
+    /* other options are xx-small, x-small, small, medium, large, x-large, xx-large */
+    /* also you can apply different units such as px, rem, em, or words */
+    /* 
+       px - pixels
+       rem - root em - the root element
+       em - the current element
+     */
+    font-size: x-large; /* px, rem, em, or words*/
+
+    /* change the font weight */
+    font-weight: bold; /* 100-900, bold, normal, thin */
+
+    /* change the font style */
+    font-style: normal;
+    /* font-variant: small-caps;  */
+
+    /* shorthand - font */
+    /* font: italic small-caps bold 30px Arial; */
+
+    /* this will capitalize the text */
+    text-transform: capitalize;
+
+    /* this will indent the text */
+    text-indent: 30px;
+    
+    /* this will change the spacing between letters */
+    letter-spacing: 5px;
+
+    /* this will change the spacing between words */
+    word-spacing: 10px;
+
+    /* this will center the text */
+    /* other options are left, right */
+    text-align: center;
+}
+
+/* Apply different text decorations for links*/
+a {
+    /* this will remove the underline */
+    text-decoration: none;
+}

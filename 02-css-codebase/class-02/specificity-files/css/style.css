@@ -1,0 +1,29 @@
+/* applied for all inner elements in body tag */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6; /*1.6 is a dynamic relational size*/
+}
+
+/* spcific selectors have more priority */
+.container h1 {
+    color: black;
+}
+
+/* the order of rules matter, it will apply the latest rule to element */
+h1 {
+    color:red !important;
+}
+
+h1 {
+    color:yellow;
+}
+
+/* class has more priorityu than tag names, but lower than specificity */
+.heading {
+    color: salmon;
+}
+
+/* ID has more priority than tag names and class */
+#head {
+    color: black;
+}

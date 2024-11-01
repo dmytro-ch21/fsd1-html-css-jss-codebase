@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Web Page</title> 
+  </head>
+  <body>
+    <h1>Lorem Ipsum</h1>
+
+
+    <h1>Image Tag Example:</h1>
+    <!-- img tag can provide an image to be rendered -->
+    <!-- each image should have a source -->
+    <!-- absolute - when you provide a full address of an image from internet -->
+    <!-- relative - when you provide the path to an image that is located in the project -->
+    <!-- <img src="https://picsum.photos/200" alt="A nice image"> -->
+    <!-- in the images we can add few attributes: width, height, border -->
+    <!-- <img src="yollo.png" alt="An owl with yollo text underneath." border="5" width="100" height="auto"> -->
+
+    <!-- we can also create a clickable image -->
+    <a href="https://www.yoll.io/">
+      <img src="yollo.png" alt="An owl with yollo text underneath.">
+    </a>
+
+    <!-- very common attributes that you will see in most tags are: id, name, class -->
+    <p class="regular_text">Hello there!</p>
+    <p id="company_name">Yoll Academy!</p>
+    <p name="email"></p>
+    <hr>
+    <!-- style attribute - it allows us to add inline css (you can write css directly in html tag)   -->
+    <!-- 
+    color: value
+    background-color: vale
+    font-size: value
+    font-family : value
+    -->
+
+    <!-- word, hex, rgba -->
+    <h1 style="color: red">This is a nice heading!</h1>    
+    <h2 style="background-color: lightgrey">This is smaller heading!</h2>
+    <h3 style="font-size:10px">The smallest heading out of these 3.</h3>
+    <p style="color: red; font-size: 30px; background-color: lightgrey;">This is a mix!</p>
+
+    <!-- block and inline tags -->
+    <!-- block level tags occupy the whole width of the window of the browser -->
+    <!-- some of the tags are h1-h6, p, etc... -->
+    <p>
+      <p style="background-color: lightgrey;">Yoll</p>
+      <p style="background-color: yellow;">Academy</p>
+    </p>
+
+    <p>
+      <span style="background-color: lightgrey;">Yoll</span>
+      <span style="background-color: yellow;">Academy</span>
+    </p>
+
+    <!-- common tags to use for block and inline
+    div and span -->
+
+    <div class="product">
+      <h1>Nike Shoes</h1>
+      <p>These shoese are great for running</p>
+    </div>
+
+    <!-- formatting text -->
+    <p>This is a paragraph 
+      and it doesnt preserve the spaces 
+      and new lines/break lines!
+    </p>
+
+    <!-- the pre tag will perserve all the spaces and break lines in the text -->
+    <pre> This is a pre tag
+      and it does perserve the spaces and 
+      break     lines.
+    </pre>
+
+    <!-- highlight a word -->
+    <!-- mark -->
+    <p>
+      This word will be <mark>highlighted!</mark>
+    </p>
+
+    <!-- formulas -->
+    <!-- sub -->
+    <p>My fav formula is H<sub>2</sub>O</p>
+    <!-- higher up the character with sup tag -->
+    <p>my favourite equation is:E=mc<sup>2</sup></p>
+    <!-- we can cross a text - strikethrougth -->
+    <p>This text has a <del>strike</del> <u>in it!</u></p>
+    <!-- we can lower the font size  with small tag-->
+    <h3>This text will have <small>smaller</small> part in it.</h3>
+    <!-- we can center text and content with center tag -->
+    <center><h1>This is centerded!</h1></center>
+
+    <!-- HTML character entities  -->
+    <p>Created by </p>
+    <p>This is a phone: &phone;</p>
+    <h1>Emoji: &#9996;</h1>
+
+    <!-- Lists -->
+    <!-- 
+    unordered lists
+    ordered lists 
+    definition lists  
+    -->
+
+    <!-- disc, circle square -->
+
+    <h3>Fruit:</h3>
+    <ul type="circle"> 
+      <li>Apple</li>
+      <li>Pear</li>
+      <li>Plum</li>
+    </ul>
+
+    <!-- 1 - numbers, I, i - roman, A - uppercase letters, a - lowercase letters -->
+    <h3>Vegetables:</h3>
+    <ol type="a">
+      <li>Potato</li>
+      <li>Cucumber</li>
+      <li>Tomato</li>
+    </ol>
+
+    <h3>Definision list</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheet</dd>
+    </dl>
+
+    <!-- nested lists also can be created -->
+    <h3>Auto brands: </h3>
+    <ul type="square">
+      <li>Italia
+        <ol type="A">
+          <li>Ferarri</li>
+          <li>FIAT</li>
+          <li>Lamborghini</li>
+        </ol>
+      </li>
+      <li>German
+        <ol type="I">
+          <li>BMW</li>
+          <li>Mercedes</li>
+          <li>Audi</li>
+          <li>Opel</li>
+        </ol>
+      </li>
+      <li>USA
+        <ol>
+          <li>Ford</li>
+          <li>Tesla</li>
+          <li>Chevrolet</li>
+        </ol>
+      </li>
+    </ul>
+
+  </body>
+</html>

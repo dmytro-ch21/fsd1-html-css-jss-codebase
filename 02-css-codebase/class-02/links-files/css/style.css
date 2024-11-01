@@ -1,0 +1,73 @@
+/* applied for all inner elements in body tag */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* set the line height */
+    line-height: 1.6; /*1.6 is a dynamic relational size*/
+}
+
+/* regular link */
+a {
+    /* set the text decoration
+    some other options: 
+        underline - underline the link
+        overline - overline the link
+        line-through - line through the link
+     */
+    text-decoration: none;
+
+    /* set the text color */
+    color: rgba(255, 0, 0, 0.422);
+}
+
+/* a:hover - is a pseudo class 
+    it is used to style the link when the mouse hovers over it 
+    we can add any styling here we prefer for that specific state
+*/
+a:hover {
+    color: red;
+}
+
+/* a:active - is a pseudo class
+    it is used to style the link when the link is clicked
+ */
+a:active {
+    background-color: blue;
+    color: white;
+}
+
+/* a:focus - is a pseudo class
+    it is used to style the link when the link is clicked
+    and you havent clicked anywhere else
+    the moment you click on something else the link will out of focus
+ */
+a:focus {
+    background-color: yellow;
+}
+
+/* a:visited - is a pseudo class
+    it is used to style the link when the link was already clicked/visited
+ */
+a:visited {
+    color: lightgray;
+}
+
+/* icons display 
+    we can use the font awesome library
+    https://docs.fontawesome.com/web/style/style-cheatsheet
+*/
+
+i.fa-2x {
+    color: yellow;
+}
+
+i.fa-3x {
+    color: chocolate;
+}
+
+i.fa-4x {
+    color: darkblue;
+}
+
+i.fa-5x {
+    color: darkred;
+}

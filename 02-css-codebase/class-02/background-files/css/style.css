@@ -1,0 +1,73 @@
+/* applied for all inner elements in body tag */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6; /*1.6 is a dynamic relational size*/
+}
+
+p {
+    font-size: 25px; 
+}
+
+.hero {
+    /* set the font color */
+    color: #fff;
+
+    /* set the height of the hero image element */
+    height: 100vh;
+
+    /* center the text */
+    text-align: center;
+
+    /* background color */
+    background-color: coral;
+
+    /* background-image 
+        use url() to provide the path of the image
+        if you want to traverse back with your path use ../
+    */
+    background-image: url('../assets/bg-image.jpg');
+
+    /* chnage the size 
+    some other options
+        cover - cover the whole window
+        contain - cover the whole window
+        auto - default
+    */
+    background-size: cover;
+
+    /* by default the background is set to repeat
+    some other options: 
+        repeat-x - repeat horizontally
+        repeat-y - repeat vertically
+        no-repeat - no repeat
+     */
+    background-repeat: no-repeat;
+
+    /* when you want to apply a pattern as a background image
+    you can use repeat property */
+    background-image: url(../assets/protruding-squares.png);
+    background-size: 200px;
+    background-repeat: repeat;
+
+    /* we can change the position of the image 
+    some other options: 
+        center - center the image
+        top - top of the image
+        bottom - bottom of the image
+    */
+    background-position: center;
+
+    /* shorthand of background, when you apply the position and size use forward slash so browset doent get confused */
+    /* background: url('../assets/pattern.jpg') repeat center/cover; */
+    
+    /* linear gradient */
+    /* 
+    1. provide 'to where'
+    2. start color 
+    3. end color
+    */
+
+    /* UNCOMMENT this block if you want to see the gradient */
+    /* background: linear-gradient(to bottom, lightblue, darkblue);
+    background: linear-gradient(to top right, lightblue, darkred); */
+}

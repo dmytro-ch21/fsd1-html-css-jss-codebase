@@ -1,0 +1,20 @@
+/* applied for all inner elements in body tag */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+h3.economy {
+    color: coral;
+}
+
+h3.luxury {
+    color: #2263c5;
+}
+
+h3.family {
+    /* RGBA */
+    color: rgba(194, 2, 2, 0.9);
+    /* HSLA */
+    color: hsla(245, 60%, 50%, 0.4);
+}

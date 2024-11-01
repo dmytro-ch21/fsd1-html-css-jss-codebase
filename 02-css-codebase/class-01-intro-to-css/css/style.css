@@ -1,0 +1,20 @@
+/* * the pound sign is the sorthand for id - ctrl + / or mac command +* */
+#two {
+    color: blue;
+}
+/* the dot sign is shorthand for class attribute */
+.myheader {
+    color: red;
+}
+
+/* the star selector aka universal it is a whild card that selects all the tags in html document */
+* {
+    color: yellow;
+}
+
+/* we can group the selectors by separating them with commas
+ */
+
+ p, h3, h2 {
+    color: blue;
+ }

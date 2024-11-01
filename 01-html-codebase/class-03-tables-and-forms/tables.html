@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTMLTables and Forms</title>
+</head>
+<body>
+    <h1>Learning HTML Tables: </h1>
+    <hr>
+    <!-- to define a table we use table tag -->
+    <!-- each table will be separated in sections as:
+    header - thead (used to provide column names)
+    body - tbody (used to add actual data)
+    footer - tfoot (used to provide a summary of the data in table) -->
+
+    <!-- the concept of the table relies on hierarchy of how the data is stored
+    each table with have abve mentioned sections, but in nutshell there will be rows and columns
+    first you define how many rows you need with - tr tag
+    then in each tr you can create as many cell you need with - td or th depending on the section -->
+
+    <!-- this defines a table -->
+    <table border="2" style="width: 80%; height: 250px;" cellpadding="20px" cellspacing="0">
+      <!-- this defines the header of the table -->
+      <thead style="height: 50px;" bgcolor="lightgrey">
+        <!-- the header has one row and we use tr to define it -->
+        <tr>
+          <!-- the row will contain 2 columns so we create 2 th(table header cell) -->
+          <th>
+            Fruit
+          </th>
+          <th>
+            Color
+          </th>
+        </tr>
+      </thead>
+      <!-- this defines the body of the table -->
+      <tbody>
+        <!-- in the body of the table we can define as many rows we need depending on the data -->
+        <!-- here we have 2 rows -->
+        <tr>
+          <!-- each row will have 2 columns in it, we define them with td(table body cell) -->
+          <td rowspan="2">
+            Apple
+          </td>
+          <td bgcolor="red">
+            Red
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="yellow">
+            Yellow
+          </td>
+        </tr>
+      </tbody>
+      <!-- this defines the footer op the table  -->
+      <tfoot>
+        <tr>
+          <td colspan="2">Fruit count: 2</td>
+        </tr>
+      </tfoot>
+    </table>  
+
+    <hr>
+    <br><br>
+    <table background="https://picsum.photos/seed/picsum/600/150" border="3" style="width: 600px;" cellpadding="5px" cellspacing="0">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight: bold;">John</td>
+          <td>Doe</td>
+          <td>johndoe@email.com</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+          <td>janedoe@email.com</td>
+        </tr>
+        <tr>
+          <td>Bart</td>
+          <td>Doe</td>
+          <td>N/A</td>
+        </tr>
+      </tbody>
+    </table>
+
+</body>
+</html>
