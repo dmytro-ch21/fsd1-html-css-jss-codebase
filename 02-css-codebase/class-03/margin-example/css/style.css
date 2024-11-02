@@ -1,0 +1,31 @@
+/* apply font family to the whole document */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* style common boxes */
+.box {
+    background-color: salmon;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box h1 {
+    margin-bottom: 20px;
+}
+
+.box-2 {
+    margin-top: 40px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+
+    /* T-R-B-L */
+    margin: 20px 30px 40px 50px;
+}
+
+/* to make sure we have the box model in center on x axis we use auto for left and right margins */
+.box {
+    margin: 20px auto;
+}

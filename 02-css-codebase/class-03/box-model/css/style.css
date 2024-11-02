@@ -1,0 +1,48 @@
+/* apply font family to the whole document */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* create a common style for cards/boxes */
+.card {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    border: 5px solid red;
+    margin: 20px;
+}
+
+/* style each card separately */
+.card-1 {
+    color: salmon;
+    width: 200px;
+    height: 150px;
+
+    /* if your content overflows the box use overflow property to control it */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow-y: scroll;
+}
+
+.card-2 {
+    /* is a responsive width that will grow and shrink as the parent box changes in size */
+    /* it preferred over the fixed size */
+    width: 50%;
+}
+
+.card-2 p{
+    /* we can have inner elements width set to percentage and that would be relative to the parent element/box */
+    width: 50%;
+}
+
+.card-3 {
+    /* 
+    max-width is recommended in most of the cases over the width 
+    the idea is that you set only the maximum width and if smaller size needed it will adjust 
+    however, once we learn flexbox this will be less used 
+    */
+
+    /* flexbox is used in most modern application 90% of time, also grid is used but not as popular as flexbox */
+    max-width: 800px;
+    min-width: 400px;
+}

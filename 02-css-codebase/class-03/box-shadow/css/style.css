@@ -1,0 +1,45 @@
+/* apply font family to the whole document */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(235, 228, 228);
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 15px;
+
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.box-1 {
+    box-shadow: 10px 10px black;
+}
+
+.box-2 {
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.2);
+}
+
+.box-3 {
+    border: none;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.5), 10px 10px 10px rgba(0, 0, 0, 0.2);
+}

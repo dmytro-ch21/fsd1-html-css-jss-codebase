@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* apply font family to the whole document */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+p {
+    margin-bottom: 15px;
+}
+
+.none-el {
+    display: none;
+}
+
+.hidden-el {
+    visibility: hidden;
+}
+
+p {
+    display: inline;
+}
+
+a {
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+
+    /* you cannot change the width and height of inline elements */
+    /* to actually change we have to change the display property */
+    width: 100px;
+    height: 50px;
+
+    /* inline block acts as a inline element however you can change the wiodth and height of the elements */
+    display: inline-block;
+}

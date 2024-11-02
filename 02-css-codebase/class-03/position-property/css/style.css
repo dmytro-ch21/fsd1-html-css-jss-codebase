@@ -1,0 +1,69 @@
+/* apply font family to the whole document */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+    border: 2px solid black;
+    margin: 15px;
+
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1 {
+    position: static;
+    /* statically positioned elements cannot use properties as top, left, bottom, right */
+    top: 200px;
+}
+
+.box-2 {
+    position: relative;
+    left: 30px;
+    top: -10px;
+}
+
+.box-3 {
+    position: fixed;
+    top: -15px;
+    left: -15px;
+    width: 100vw;
+    height: 50px;
+    z-index: 2;
+}
+
+.box-4 {
+    position: sticky;
+    top: 100px;
+}
+
+/* to use absolute position which means move the element relative to the parent element 
+we need to make sure that the parent has the psotion relative */
+
+.box-5 {
+    position: relative;
+    background-color: darkred;
+}
+
+.box-6 {
+    /* the absolute position will allow you to move element around based on the parent element */
+    position: absolute;
+    background-color: yellow;
+    width: 100px;
+    height: 25px;
+    border: none;
+    top: -20px;
+    right: -20px;
+}

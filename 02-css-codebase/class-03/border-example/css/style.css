@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* apply font family to the whole document */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* style common boxes */
+.box {
+    background-color: salmon;
+    width: 400px;
+    padding: 20px;
+    margin: 20px auto;
+
+    /* set borders */
+    /* border: 3px solid darkblue; */
+    border-width: 4px;
+    border-style: solid;
+    border-color: darkblue;
+}
+
+.box-1 {
+    border: none;
+    border-top: 3px solid yellow;
+    border-bottom: 5px dashed blue;
+}
+
+.box-2 {
+    border-radius: 15px;
+
+    /* with border radius you make round elements */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+    text-align: center;
+    padding-top: 70px;
+
+    background: linear-gradient(to bottom left, red, blue);
+}
+
+.box-3 {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

@@ -1,0 +1,38 @@
+/* apply font family to the whole document */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    background-color: darkblue;
+    color: #fff;
+    max-width: 300px;
+
+    /* padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 50px; */
+
+    /* one unit with padding property will set evenly to all sides the specified size */
+    padding: 50px;
+
+    /* 
+    two units will set:
+    first for top and bottom 
+    second for left and right
+     */
+    padding: 20px 50px;
+
+    /* 
+    here first sets the top
+    second sets the left and right 
+    third sets the bottom
+    */
+    padding: 20px 40px 30px;
+
+    /* if you want to specify all of them */
+    /* T-R-B-L */
+    padding: 10px 20px 30px 40px;
+
+
+}
