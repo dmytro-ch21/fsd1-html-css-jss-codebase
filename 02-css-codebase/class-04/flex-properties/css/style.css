@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif; /* Sets the font family for the entire page */
+}
+
+/* Customize the main flex container */
+.flex-container {
+    /* Basic styling for the container background and size */
+    background-color: lightgray;
+    width: 100%; /* Full width of the viewport */
+    height: 50vh; /* Half the viewport height */
+
+    /* Set the container to use flexbox for layout */
+    display: flex;
+
+    /* Centers items along the cross axis (vertical alignment) */
+    align-items: center;
+
+    /* Centers items along the main axis (horizontal alignment) if uncommented */
+    /* justify-content: center; */
+
+    /* gap property defines space between flex items, currently commented out */
+    /* gap: 1.5rem; */
+}
+
+/* Customize the style of each flex item within the container */
+.flex-item {
+    width: 100px; /* Fixed width for each item */
+    background-color: orange; /* Set background color */
+    border: 1px solid black; /* Border styling */
+    padding: 20px; /* Internal spacing */
+}
+
+/* Override container-level properties with item-specific properties using align-self */
+/* Allows individual items to align independently along the cross axis */
+
+/* Example: aligns item to the bottom of the container if uncommented */
+/* .item-1 {
+    align-self: flex-end;
+} */
+
+/* Example: aligns item to the top of the container if uncommented */
+/* .item-3 {
+    align-self: flex-start;
+} */
+
+/* Explaining percentage vs. viewport units (vh, vw):
+   - Percentage: relative to the parent container dimensions
+   - vh/vw: relative to the full viewport height or width */
+
+/* By default, even if a width is set for flex items, they may still shrink to fit available space.
+   - Default flex-shrink is 1, allowing items to shrink if necessary */
+
+.item-1 {
+    /* Set width or adjust flex-shrink as needed */
+
+    /* To prevent shrinking, set flex-shrink to 0 */
+    /* flex-shrink: 0; */
+
+    /* To allow extra shrinkage compared to other items, set a value higher than 1 */
+    flex-shrink: 2;
+}
+
+/* If items in the container do not have a specified size, 
+   they will only take up the space needed to fit their content */
+
+/* The default flex-grow value of any item is set to 0, 
+   meaning items won’t grow beyond their default size unless specified */
+
+/* Example: Setting flex-grow to 1 allows the item to take up 
+   additional space in the container */
+/* .item-1 {
+    flex-grow: 1;
+} */
+
+/* When both item-1 and item-2 have flex-grow: 1, they will 
+   equally share any available space in the container */
+/* .item-1, .item-2 {
+    flex-grow: 1;
+} */
+
+/* Example: Setting flex-grow to 2 allows item-3 to take up 
+   twice as much available space as items with flex-grow: 1 */
+/* .item-3 {
+    flex-grow: 2;
+} */
+
+.flex-item {
+    /* Setting flex shorthand property for flex-grow, flex-shrink, and flex-basis 
+       - flex-grow: 1 (allows item to grow to fill space)
+       - flex-shrink: 1 (allows item to shrink if necessary)
+       - flex-basis: 0 (initial size of item before flex-grow is applied) */
+    /* Alternatively, shorthand flex: 1 simply sets flex-grow to 1 and uses default values for shrink and basis */
+    flex: 1;
+}
+
+.item-1 {
+    /* Use flex-basis to define the initial size of the item in a flex container.
+       This property behaves similarly to the width property but is fully compatible 
+       with flexbox, whereas width can sometimes cause layout issues */
+
+    /* Example: Setting flex-basis to 200px specifies a starting width of 200px
+       for this item before any flex-grow or flex-shrink adjustments */
+    /* flex-basis: 200px; */
+
+    /* You can use shorthand flex to set flex-grow, flex-shrink, and flex-basis */
+    /* flex: 1 1 0; */
+}

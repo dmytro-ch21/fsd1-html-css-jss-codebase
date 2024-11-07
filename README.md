@@ -11,3 +11,7 @@
 
 ## Icons: 
 - [Font Awesome](https://fontawesome.com/search)
+
+## Images API:
+- `https://picsum.photos/600/300` - you can chnage the sizes as needed
+- `https://placehold.co/600x300` - no image just a placeholder showing you the size of the image needed

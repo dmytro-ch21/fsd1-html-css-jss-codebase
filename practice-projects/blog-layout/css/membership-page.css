@@ -1,0 +1,206 @@
+/* Reset default styles and use border-box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font for entire document */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Main container with full viewport dimensions and centered content */
+.container {
+    /* temp property */
+    /* background-color: lightgray; */
+
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Common padding for major sections */
+.header,
+.main,
+.footer {
+    padding: 20px;
+}
+
+/* Header with dark background and flex layout */
+.header {
+    position: fixed;
+    z-index: 1000;
+    background-color: #2c3f50;
+    width: 100%;
+    flex-basis: 5%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Brand styling with white text */
+.header .brand {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Navigation bar with horizontal layout */
+.header .navbar {
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation links styling */
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Hover effect for navigation links */
+.navbar a:hover {
+    color: rgb(135, 133, 252);
+}
+
+/* Footer styling */
+.footer {
+    background-color: #2c3f50;
+    flex-basis: 7%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* change color and position of footer elements */
+.footer div {
+    color: #fff;
+    font-size: 12px;
+}
+
+/* Main content area layout */
+.main {
+    flex: 1;
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Membership section layout */
+.membership-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for membership cards */
+.membership-cards {
+    padding: 15px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+/* Individual membership card styling */
+.membership-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    /* when the move of the card happens how fast it will be, 0.3 seconds will make the move smoother */
+    transition: transform 0.3s;
+}
+
+/* Hover animation for cards */
+.membership-card:hover {
+    /* move the position of the card on Y axis with negative 10 px */
+    transform: translateY(-10px);
+}
+
+ /* Price styling within cards */
+.price {
+    font-size: 40px;
+    font-weight: bold;
+    color: #262626;
+}
+
+/* Price month styling */
+.price span {
+    font-size: 20px;
+    color: #8e8e8e;
+}
+
+/* Features list styling */
+.features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+/* Individual feature item styling */
+.features li {
+    color: #262626;
+    font-size: 15px;
+}
+
+ /* Icon styling in feature list */
+.features i {
+    margin-right: 10px;
+    color: #833ab4;
+}
+
+/* Sign up button styling */
+.cta-button {
+    background-color: #833ab4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hover effect for sign up button */
+.cta-button:hover {
+    background-color: #6c2e95;
+}
+
+/* Special styling for most popular plan */
+.most-popular {
+    border: 2px solid #833ab4;
+    position: relative;
+}
+
+/* Popular badge styling */
+.most-popular-badge {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #833ab4;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}

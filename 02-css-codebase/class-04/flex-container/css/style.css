@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Make the container a flex container using display: flex */
+.flex-container {
+    /* Set a background color to visualize the container */
+    background-color: aqua;
+    height: 90vh;
+
+    /* Set up flex display, which defaults to row direction */
+    display: flex;
+    gap: 20px;
+
+    /* Define the flex direction. Options include:
+       - row (default): items align in a horizontal row
+       - row-reverse: items align in reverse order horizontally
+       - column: items align vertically
+       - column-reverse: items align in reverse order vertically */
+    flex-direction: row;
+
+    /* Enable wrapping, allowing items to move to the next line if they overflow the container */
+    flex-wrap: wrap;
+
+    /* Control the alignment of items along the main axis with justify-content. Options include:
+       - flex-start: items align to the start
+       - flex-end: items align to the end
+       - center: items align to the center
+       - space-around: items have equal space around them
+       - space-between: items have equal space between them
+       - space-evenly: items have equal space distributed evenly */
+    justify-content: center;
+
+    /* For flex-direction: column, justify-content aligns items along the vertical axis */
+    /* Uncomment if changing to column direction
+    flex-direction: column;
+    justify-content: flex-start;
+    */
+
+    /* Use align-items to align items on the cross-axis (vertical when flex-direction: row).
+       Options include:
+       - flex-start: items align at the top
+       - flex-end: items align at the bottom
+       - center: items align at the center
+       - stretch: items stretch to fill the container (if no height is specified on items) */
+    align-items: center;
+
+    /* When using column direction, stretch won't work with items that have a specified width */
+}
+
+/* Style for individual flex items */
+.flex-item {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    /* Specify height and background color for visual clarity */
+    height: 150px;
+    background-color: salmon;
+}
