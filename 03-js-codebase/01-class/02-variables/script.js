@@ -13,7 +13,7 @@ var age = 30; // initialize first
 
 console.log(age);
 
-// Namiong Conventions
+// Naming Conventions
 
 // let 1name = 'Dima'; - cannot start with numbers
 // let name+last = 'Cho'; - cannot have special characters

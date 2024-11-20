@@ -11,7 +11,12 @@ let myCar = {
   year: 2024
 }
 
+// Assign to myWifesCar a reference to myCar
 let myWifesCar = myCar;
+console.log(myWifesCar);
+
+// Change the color of the car object
 myWifesCar.color = 'Pink';
 
+// Print myCar
 console.log(myCar);
