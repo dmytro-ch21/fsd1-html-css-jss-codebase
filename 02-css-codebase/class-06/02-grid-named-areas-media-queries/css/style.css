@@ -1,0 +1,94 @@
+/* Reset default styles for box-model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font for the whole document */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.item {
+    padding: 20px;
+}
+
+.header {
+    background-color: #30314bcd;
+    text-align: center;
+    grid-area: header;
+
+    /* In order to make an element stick to the topin grid do not use fixed position */
+    position: sticky;
+    top: 0;
+}
+
+.sidebar {
+    background-color: #e7e7e7;
+    text-align: center;
+    grid-area: sidebar;
+}
+
+.main {
+    background-color: #cccccc;
+    text-align: center;
+    grid-area: main-content;
+}
+
+.footer {
+    background-color: #30314bcd;
+    text-align: center;
+    grid-area: footer;
+}
+
+article {
+    margin: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+    border-radius: 10px;
+}
+
+
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "sidebar"
+        "main-content"
+        "footer";
+        grid-template-columns: 1fr;
+}
+
+
+/* syntax is @media (condition){} */
+/* two most common conditions will be: min-width and max-width */
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-areas: 
+            "header header"
+            "sidebar main-content"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header {
+        background-color: darkblue;
+        color: white;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template-areas:
+            "header header header header"
+            "sidebar main-content main-content main-content"
+            "footer footer footer footer";
+        grid-template-columns: repeat(4, 1fr);    
+    }
+
+    .header {
+        background-color: darkred;
+        color: white;
+    }
+}

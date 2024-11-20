@@ -1,0 +1,82 @@
+/* Reset default styles for box-model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    --my-background-color: #d5d5d5;
+    --my-secondary-color: #9d79ff;
+    --my-regular-padding: 2rem;
+    --my-paragraph-font-size: 1.2rem;
+    --my-header-font-size: 2.2rem;
+    --shadow-common-color: rgba(0,0,0, 0.2);
+}
+
+/* Set default font for the whole document */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    padding: var(--my-regular-padding);
+}
+
+html {
+    font-size: 16px;
+}
+
+.box {
+    background-color: var(--my-background-color);
+    padding: var(--my-regular-padding);
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+
+    /* Absolute Units */
+    /* font-size: 20px; */
+    /* font-size: 20pt; */
+    /* font-size: 1in; */
+    /* font-size: 0.5cm; */
+    /* font-size: 6mm; */
+
+    /* Relative Units - Dynamic*/
+    /* rem - is relative to the root element's (html) font-size
+        by default html (font-size) is 16px
+    */
+    /* font-size: 1.3rem; */
+}
+
+ul {
+    list-style: none;
+    /* em - parent element's font size */
+    font-size: var(--my-paragraph-font-size);
+    color: var(--my-background-color);
+}
+
+/* vh, vw, % */
+
+.outer-box {
+    background-color: var(--my-background-color);
+    padding: var(--my-regular-padding);
+    border-radius: 1.5rem;
+
+    /* vw - viewport width */
+    width: 80vw;
+    height: 30vh;
+
+    font-size: 20px;
+
+    box-shadow: 0 0 10px var(--shadow-common-color);
+}
+
+.inner-box {
+    font-size: var(--my-header-font-size);
+    background-color: var(--my-secondary-color);
+    padding: var(--my-regular-padding);
+    border-radius: 0.7rem;
+
+    width: 50%;
+    /* font-size: 120%; */
+}

@@ -1,0 +1,104 @@
+/* Reset default styles for box-model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font for the whole document */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    /* height: 100vh; */
+    background-color: #ededed;
+    padding: 20px;
+}
+
+.item {
+   background-color: #c4c4c4; 
+   border: 1px solid darkblue;
+   padding: 20px;
+   text-align: center;
+}
+
+/* CSS Grid - columns, rows and gap */
+.grid-container {
+    /* to apply grid display */
+    display: grid; /* nothing changes */
+    /* set the columns */
+    /* pixels are very specific and we need to avoid them */
+    /* grid-template-columns: 100px 100px 100px; */
+
+    /* apply percentage */
+    /* grid-template-columns: 10% 10% 10%; */
+
+    /* one of the best ways will be to use fractions */
+    /* grid-template-columns: 1fr 2fr 3fr; */
+    
+    /* set rows */
+    /* grid-template-rows: 100px 100px 100px; */
+    /* grid-template-rows: 1fr 2fr 3fr; */
+
+    /* grid-row-gap: 10px;
+    grid-column-gap: 20px;
+
+    grid-gap: 20px; */
+
+    gap: 10px;
+
+    /* auto unit */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: 1fr 2fr 3fr; */
+
+    /* we can set automatic height for all rows at once */
+    /* grid-auto-rows: 200px; */
+
+
+    /* with repeat function we can create more efficiently even sized columns or rows */
+    /* repeat() - function takes 2 arguments
+    first -> number of how many columns or rows you need 
+    secont -> the size that needs to be applied for each columns or rows
+    */
+    
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(3, 200px); */
+
+
+    /* minmax() function sets up the minimum and the maximum sizes that a column or row should have */
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+
+    /* auto-fit value will adjust to the size of the available space
+    if there is no enougth space it will go to the second row
+    if there is too much space it will increase the number of columns */
+
+    /* auto-fill vs auto-fit 
+    auto-fill - will take only the space needed for content and will go dynamically to the next row if needed
+    auto-fit - will try to occupy the whole space available on larger screens
+    */
+    /* when use a dynamic value such as auto-fit we have to be careful what is the minimum size
+    if we set it to 1fr or auto we might get overflow of the content  */
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+    grid-template-columns: repeat(3, 200px);
+    /* grid-template-rows: repeat(2, 200px); */
+
+    /* we can control the alignment of 2 things */
+    /* justify-content, align-content */
+    /* main axis      , cross-axis */
+    /* align-items, justify-items - controlling the alignment in the items itself */
+
+    /* justify-content: start; */
+    /* start | center | end | space-between, evenly, around */
+    
+    /* to see how the alignment of content works on cross axis we need space available vertically */
+    /* height: 600px; */
+    /* align-content: center;  */
+    /* start | center | end | space-between, evenly, around */
+
+    /* justify-items: end; */
+
+    /* align-items: stretch;  */
+
+}
