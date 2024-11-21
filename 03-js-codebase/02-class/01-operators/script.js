@@ -69,7 +69,22 @@ comparisonResult = 10 >= 10;
 comparisonResult = 6 < 6;
 comparisonResult = 6 <= 6;
 
-console.log(comparisonResult);
+// console.log(comparisonResult);
 
 
-console.log(2 == '2');
+let res = 10 > 5 && 8 < 8; // true && false
+// console.log(res);
+
+
+const isWeekend = false;
+const isHoliday = true;
+
+res = isWeekend || isHoliday;
+
+// console.log(res);
+
+const isRaining = true;
+
+console.log(!isRaining);
+
+console.log((18 > 17 && 10 <= 10) || (isWeekend || isHoliday || !isRaining));
