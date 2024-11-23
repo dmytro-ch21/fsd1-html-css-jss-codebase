@@ -43,9 +43,9 @@ result = myStr.trim();
 // replaceAll() will replace all occurances of given character/s
 
 let sentence = 'Hello World World!';
-
-// result = sentence.replace('World', 'JavaScript');
-result = sentence.replace('l', '1');
+result = sentence.replace(/World/g, 'JS');
+console.log(result);
+// result = sentence.replace('l', '1');
 
 // result = sentence.replace();
 
@@ -54,23 +54,16 @@ result = sentence.replace('l', '1');
 // console.log(result);
 
 
+// let firstName = 'Mark';
+
+// // let greeting = 'Hello ' + firstName + '. Nice to meet you!';
+
+// let greeting = `Hello ${firstName}. Nice to meet you!`;
+
+// console.log(greeting);
 
 
-
-
-
-
-
-
-
-let firstName = 'Mark';
-
-// let greeting = 'Hello ' + firstName + '. Nice to meet you!';
-
-let greeting = `Hello ${firstName}. Nice to meet you!`;
-
-console.log(greeting);
-
+// this is 
 
 
 
