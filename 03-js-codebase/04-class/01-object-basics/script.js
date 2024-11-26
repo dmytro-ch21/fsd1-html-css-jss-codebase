@@ -1,4 +1,4 @@
-console.log("JS Objects Basics");
+console.log('JS Objects Basics');
 let prop;
 // Declare an object (2 ways)
 
@@ -11,7 +11,7 @@ let prop;
 
 // Object Literals - more performant
 const person = { 
-    name: "Bart Simpson",
+    name: 'Bart Simpson',
     age: 30, 
     isNewUser: false,
 };
