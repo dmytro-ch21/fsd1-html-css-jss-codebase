@@ -109,4 +109,3 @@ console.log(jsonPlaylist);
 // Convert back to a js object
 const parsedPlaylist = JSON.parse(jsonPlaylist);
 console.log(parsedPlaylist);
-
