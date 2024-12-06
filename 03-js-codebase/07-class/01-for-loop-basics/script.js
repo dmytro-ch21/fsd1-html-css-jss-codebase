@@ -40,28 +40,46 @@ console.log("For Loops");
 // }
 
 // Loop througth an array
-const simpsons = ["Homer", "Marge", "Bart", "Lisa", "Maggie", "Abe", "Mona"];
+// const simpsons = ["Homer", "Marge", "Bart", "Lisa", "Maggie", "Abe", "Mona"];
 
-for (let i = 0; i < simpsons.length; i++) {
-  //   if (i === 3) {
-  //     console.log(`${simpsons[i]} is the best character in the show!`);
-  //   } else {
-  //     console.log(simpsons[i]);
-  //   }
+// for (let i = 0; i < simpsons.length; i++) {
+//   //   if (i === 3) {
+//   //     console.log(`${simpsons[i]} is the best character in the show!`);
+//   //   } else {
+//   //     console.log(simpsons[i]);
+//   //   }
 
-  if (simpsons[i] === 'Bart') {
-    console.log(`${simpsons[i]} is the best character in the show!`);
-  } else {
-    console.log(simpsons[i]);
-  }
-}
+//   if (simpsons[i] === 'Bart') {
+//     console.log(`${simpsons[i]} is the best character in the show!`);
+//   } else {
+//     console.log(simpsons[i]);
+//   }
+// }
 
 // '', "", `` -> all are equally strings
-console.log('One' === 'One');
-console.log('One' === "One");
-console.log('One' === `One`);
+// console.log('One' === 'One');
+// console.log('One' === "One");
+// console.log('One' === `One`);
 
-console.log('One', typeof 'One');
-console.log("One", typeof "One");
-console.log(`One`, typeof `One`);
+// console.log('One', typeof 'One');
+// console.log("One", typeof "One");
+// console.log(`One`, typeof `One`);
+
+// Break and Continue statements 
+// for(let i = 1; i <= 20; i++){ // i = 13 = true
+//     console.log(`Number: ${i}`);
+    
+//     if(i === 13){
+//         console.log('Breaking here...');
+//         break;
+//     }  
+// }
+
+// for(let i = 1; i <= 20; i++){ // i = 13 = true
+//     if(i === 13){
+//         console.log('Skipping here...');
+//         continue;
+//     }  
+//     console.log(`Number: ${i}`);
+// }
 
