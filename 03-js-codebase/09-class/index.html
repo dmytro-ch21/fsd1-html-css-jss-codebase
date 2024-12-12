@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Goal Tracker</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tracker" id="goal-tracker">
+        <button class="add-btn" id="add-goal">Add Item</button>
+        <input
+          placeholder="Filter Items"
+          type="text"
+          name="filter"
+          id="filter"
+          data-type="search"
+        />
+
+        <ul class="items" id="goal-list">
+          <li class="item" data-priority="high">
+            <span class="goal-text">Exercise 1hr</span>
+            <button onclick="taskDone()" class="delete-btn">X</button>
+          </li>
+          <li class="item" data-priority="medium">
+            <span class="goal-text">Study Before Work</span>
+            <button class="delete-btn">X</button>
+          </li>
+          <li class="item" data-priority="low">
+            <span class="goal-text">10,000 Steps</span>
+            <button class="delete-btn">X</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

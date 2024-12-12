@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0a192f;  /* Dark blue background */
+}
+
+.container {
+    width: 100vw;
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding: 3rem;
+}
+
+.tracker {
+    min-width: 500px;
+    max-width: 800px;    
+    display: flex;
+    flex-direction: column;
+}
+
+.add-btn::before{
+    content: '+ ';
+}
+
+.add-btn {
+    max-width: 200px;
+    font-size: 1.5rem;
+    padding: 0.6rem 2rem;
+    background-color: #64ffda;  /* Neon mint */
+    color: #0a192f;  /* Dark blue text */
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #4dd5bd;
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
+}
+
+input {
+    border: none;
+    background-color: transparent;  /* Subtle neon background */
+    border-bottom: 2px solid #64ffda;  /* Neon mint border */
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #64ffda;  /* Neon mint text */
+}
+
+input::placeholder {
+    font-size: 2rem;
+    color: rgba(100, 255, 218, 0.3);  /* Subtle neon placeholder */
+}
+
+ul {
+    list-style: none;  
+}
+
+li {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px solid #64ffda;  /* Neon mint border */
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.2);  /* Neon glow effect */
+    color: #64ffda;  /* Neon mint text */
+    background-color: rgba(100, 255, 218, 0.05);  /* Very subtle background */
+    
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.list-item-blue {
+    color: blue; 
+}
+
+.list-item-yellow {
+    color: yellow; 
+}
+
+.list-item-red {
+    color: red; 
+}
+
+.active {
+    border: 4px solid yellow; 
+}
+
+.done {
+    background-color: lightgreen;
+    color: darkslateblue;
+}
+
+
+li:hover {
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);  /* Enhanced glow on hover */
+    transform: translateY(-2px);
+}
+
+li > button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: #ff6b6b;  /* Neon red for delete button */
+    transition: color 0.3s ease;
+}
+
+li > button:hover {
+    color: #ff4747;  /* Brighter red on hover */
+}
+
+div[class=tracker] {
+
+}
