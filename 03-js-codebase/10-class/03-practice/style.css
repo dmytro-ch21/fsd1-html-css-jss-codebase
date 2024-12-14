@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 231, 231);
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.card {
+    width:250px;
+    height: 300px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;;
+}
+
+.name, .power {
+    font-weight: 700;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.emoji {
+    flex: auto;
+
+    background-color: rgb(208, 194, 194);
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 6rem;
+    margin: 1rem 0;
+}
