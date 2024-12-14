@@ -118,7 +118,3 @@ li > button {
 li > button:hover {
     color: #ff4747;  /* Brighter red on hover */
 }
-
-div[class=tracker] {
-
-}
