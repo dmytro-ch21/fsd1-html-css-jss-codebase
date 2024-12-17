@@ -12,6 +12,7 @@ body {
 .container {
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 5rem;
 }
@@ -48,4 +49,15 @@ body {
 
     font-size: 6rem;
     margin: 1rem 0;
+}
+
+button {
+    margin-top: 2rem;
+    width: 200px;
+    background-color: blue;
+    color: white;
+}
+
+button:hover{
+    color: yellow;
 }
