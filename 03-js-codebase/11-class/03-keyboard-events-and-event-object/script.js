@@ -13,54 +13,6 @@ const divKeyCode = document.querySelector(".key-code");
 const divCode = document.querySelector(".code");
 
 
-
-// Keyboard Events
-// event.key, event.keyCode, event.code
-// keypress
-input.addEventListener('keypress', function(event) {
-    console.log(event);
-    
-    divKey.textContent = event.key;
-    divKeyCode.textContent = event.keyCode;
-    divCode.textContent = event.code;
-
-    console.log(eventKey, eventKeyCode, eventCode);
-});
-
-// // keydown
-// input.addEventListener('keydown', function(event){
-//     console.log('On Key Down....');
-// });
-
-// // keyup
-// input.addEventListener('keyup', function(event){
-//     console.log('On Key Up....');
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // // Functions
 // const onClickMe = () => {
 //   const headerH3 = document.createElement("h3");
@@ -126,3 +78,28 @@ input.addEventListener('keypress', function(event) {
 // // adding a new element
 // button.addEventListener("click", onClickMe);
 // form.addEventListener("submit", onSubmit);
+
+
+
+// Keyboard Events
+// event.key, event.keyCode, event.code
+// keypress
+input.addEventListener('keypress', function(event) {
+    console.log(event);
+    
+    divKey.textContent = event.key;
+    divKeyCode.textContent = event.keyCode;
+    divCode.textContent = event.code;
+
+    console.log(eventKey, eventKeyCode, eventCode);
+});
+
+// // keydown
+// input.addEventListener('keydown', function(event){
+//     console.log('On Key Down....');
+// });
+
+// // keyup
+// input.addEventListener('keyup', function(event){
+//     console.log('On Key Up....');
+// });
