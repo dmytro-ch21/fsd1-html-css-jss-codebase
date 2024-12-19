@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Event Listeners</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="reg-form" >
+      <h1>Sign Up</h1>
+
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" />
+        <div id="first-name-error" class="error">First Name is Mandatory</div>
+      </div>
+
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" />
+        <div class="error">Last Name is Mandatory</div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" />
+        <div class="error">Email is Mandatory</div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+        <div class="error">Password is Mandatory</div>
+      </div>
+
+      <div class="form-group">
+        <label for="prefix">Prefix</label>
+        <select id="prefix" name="prefix">
+          <option value="">--Please choose an option--</option>
+          <option value="Mister">Mr.</option>
+          <option value="Miss">Miss</option>
+          <option value="Misses">Mrs.</option>
+          <option value="Mizz">Ms.</option>
+        </select>
+        <div class="error">Prefix is Mandatory</div>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <label>
+          <input
+            type="checkbox"
+            id="newsletter"
+            name="newsletter"
+            value="yes"
+          />
+          Subscribe to newsletter
+        </label>
+        <div id="err-news" class="error">Checking This is Mandatory</div>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <label>
+          <input type="checkbox" id="terms" name="terms" value="agree" />
+          I agree to the Terms and Conditions
+        </label>
+        <div class="error">Checking Terms is Mandatory</div>
+      </div>
+
+      <div class="btn-div">
+        <button type="submit">Sign Up</button>
+      </div>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
