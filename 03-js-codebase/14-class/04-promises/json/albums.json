@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Divide",
+        "author": "Ed Sheeran",
+        "songs": [
+            {
+                "title": "Shape of You",
+                "duration": "3:54"
+            },
+            {
+                "title": "Castle on the Hill",
+                "duration": "4:21"
+            }
+        ]
+    },
+    {
+        "title": "After Hours",
+        "author": "The Weeknd",
+        "songs": [
+            {
+                "title": "Blinding Lights",
+                "duration": "3:20"
+            },
+            {
+                "title": "Save Your Tears",
+                "duration": "3:35"
+            }
+        ]
+    },
+    {
+        "title": "A Night at the Opera",
+        "author": "Freddie Mercury",
+        "songs": [
+            {
+                "title": "Bohemian Rhapsody",
+                "duration": "5:55"
+            },
+            {
+                "title": "Love of My Life",
+                "duration": "3:39"
+            }
+        ]
+    },
+    {
+        "title": "21",
+        "author": "Adele",
+        "songs": [
+            {
+                "title": "Rolling in the Deep",
+                "duration": "3:48"
+            },
+            {
+                "title": "Someone Like You",
+                "duration": "4:45"
+            }
+        ]
+    },
+    {
+        "title": "Imagine",
+        "author": "John Lennon",
+        "songs": [
+            {
+                "title": "Imagine",
+                "duration": "3:15"
+            },
+            {
+                "title": "Jealous Guy",
+                "duration": "4:13"
+            }
+        ]
+    }
+]
