@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Popovers and Tooltips</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-5">Popovers and Tooltips</h1>
+
+      <button
+        class="btn btn-danger btn-lg"
+        id="popoverButton"
+        data-bs-toggle="popover"
+        data-bs-title="Be careful!"
+        data-bs-content="Pay attention to the email, this might be phishing email!"
+      >
+        Popover Example
+      </button>
+      <br /><br />
+      <!-- Tooltip -->
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <a
+          href="#"
+          data-bs-toggle="tooltip"
+          data-bs-title="This is a nicer tooltip!"
+          >Pariatur nostrum ut</a
+        >, modi quasi reprehenderit vel deserunt totam, vero magni aliquid hic
+        repellat illum?
+        <a
+          href="#"
+          data-bs-toggle="tooltip"
+          data-bs-title="This is a nicer tooltip!"
+          >Ipsa expedita ad</a
+        >
+        , tempore error incidunt nesciunt quaerat eveniet ex porro facere
+        excepturi sapiente tempora, ab reiciendis?
+      </p>
+    </div>
+
+    <div style="height: 600px"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const popoverButton = document.getElementById("popoverButton");
+      const popover = new bootstrap.Popover(popoverButton);
+
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map((tooltip) => {
+        return new bootstrap.Tooltip(tooltip);
+      });
+    </script>
+  </body>
+</html>

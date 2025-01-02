@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Form Inputs</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-5">Form Inputs</h1>
+
+      <form class="mb-5">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address:</label>
+          <input type="email" id="email" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" id="password" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <input type="checkbox" id="check" class="form-check-input" />
+          <label for="check" class="form-check-label"
+            >Terms and Conditions Apply</label
+          >
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-primary" />
+      </form>
+      <hr />
+
+      <form>
+        <!-- Select Field -->
+        <div class="mb-3">
+          <select name="select" id="select" class="form-select">
+            <option value="0">Select an option here...</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+
+        <!-- Text Area -->
+        <div class="mb-3">
+          <textarea
+            name="textarea"
+            id="textarea"
+            class="form-control"
+            placeholder="Type here..."
+          ></textarea>
+        </div>
+
+        <!-- Inline Checkboxes -->
+        <div class="mb-3">
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="check-1" />
+            <label for="check-1">One</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="check-2" />
+            <label for="check-2">Two</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="check-3" />
+            <label for="check-3">Three</label>
+          </div>
+        </div>
+
+        <!-- Toggle Button -->
+        <div class="mb-3">
+          <input type="checkbox" class="btn-check" id="ch-1" />
+          <label for="ch-1" class="btn btn-primary">Button Toggler</label>
+        </div>
+
+        <!-- Range -->
+        <div class="mb-3">
+          <label for="rng" class="form-label"></label>
+          <input type="range" class="form-range" id="rng">
+         </div>
+
+         <div class="mb-3">
+          <label for="rng" class="form-label"></label>
+          <input type="range" class="form-range" id="rng" min="0" max="10" step="1">
+         </div>
+      </form>
+<hr>
+      <!-- Input Groups - Adding Icons or Buttons to input fields -->
+       <form >
+        <div class="mb-3 input-group">
+          <span class="input-group-text">Email:</span>
+          <input type="email" id="email" class="form-control"/>
+        </div>
+       </form>
+
+       <hr>
+
+       <form>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="type here...">
+          <button class="btn btn-outline-secondary">Search</button>
+        </div>
+       </form>
+
+    </div>
+
+    <div style="height: 600px"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
