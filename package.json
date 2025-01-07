@@ -1,0 +1,23 @@
+{
+  "name": "fsd1-html-css-jss-codebase",
+  "version": "1.0.0",
+  "description": "## Fonts:  - [Google Fonts](https://fonts.google.com/) - choose any fonts you like and link them to your project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmytro-ch21/fsd1-html-css-jss-codebase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmytro-ch21/fsd1-html-css-jss-codebase/issues"
+  },
+  "homepage": "https://github.com/dmytro-ch21/fsd1-html-css-jss-codebase#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
